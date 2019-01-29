@@ -1,0 +1,18 @@
+server:
+  port: 2048
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/foolishlysmile/easygo-config.git
+          username: foolishlysmile
+          password: glw5211314
